@@ -1,7 +1,12 @@
 import './globals.css';
 
+import { Metadata } from 'next';
 import FlyonuiScript from '../components/FlyonuiScript';
-import NavBar from '../components/NavBar';
+
+export const metadata: Metadata = {
+  title: 'HealthTracker - Your Personal Health Companion',
+  description: 'Track your health.',
+}
 
 export default function RootLayout({
   children,
@@ -9,12 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-base-200">
-        <NavBar />
-        <div className="p-6">{children}</div>
+    <html lang="en" data-theme="soft">
+      <body>
+
+        <div>{children}</div>
       </body>
       <FlyonuiScript />
     </html>
   );
 }
+
