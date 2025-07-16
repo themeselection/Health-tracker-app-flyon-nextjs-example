@@ -1,7 +1,10 @@
 import classNames from 'classnames';
 
-export default function Button(props: any) {
-  const { classnames, content } = props;
+interface ButtonProps {
+  classnames?: string;
+  content: React.ReactNode;
+}
 
+export default function Button({ classnames, content }: ButtonProps) {
   return <button className={classNames('btn', classnames)}>{content}</button>;
 }

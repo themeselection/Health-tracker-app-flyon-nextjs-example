@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function HeroSection() {
     return (
         <main className="pt-40 pb-20">
@@ -41,8 +43,8 @@ export default function HeroSection() {
                         <a href="#"
                             className="rounded-field shadow-base-300/20 flex items-center gap-4 bg-black px-6 py-2.5 shadow-sm hover:shadow-md transition-shadow">
                             <span className="flex items-center gap-4">
-                                <img src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/cta/apple-icon.png"
-                                    alt="App Store" className="w-6" />
+                                <Image src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/cta/apple-icon.png"
+                                    alt="App Store" className="w-6" width={24} height={24} unoptimized />
                                 <span className="flex flex-col items-start text-white/90">
                                     <span className="text-xs">Download on the</span>
                                     <span className="font-medium">App Store</span>
@@ -53,8 +55,8 @@ export default function HeroSection() {
                         <a href="#"
                             className="rounded-field shadow-base-300/20 flex items-center gap-4 bg-black px-6 py-2.5 shadow-sm hover:shadow-md transition-shadow">
                             <span className="flex items-center gap-4">
-                                <img src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/cta/google-play-icon.png"
-                                    alt="Google Play" className="w-7" />
+                                <Image src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/cta/google-play-icon.png"
+                                    alt="Google Play" className="w-7" width={28} height={28} unoptimized />
                                 <span className="flex flex-col items-start text-white/90">
                                     <span className="text-xs">Get it on</span>
                                     <span className="font-medium">Google Play</span>
@@ -70,7 +72,7 @@ export default function HeroSection() {
                             <div className="tooltip">
                                 <div className="tooltip-toggle avatar">
                                     <div className="w-12">
-                                        <img src="https://i.pravatar.cc/100?img=1" alt="User" />
+                                        <Image src="https://cdn.flyonui.com/fy-assets/avatar/avatar-2.png" alt="User" width={48} height={48} unoptimized />
                                     </div>
                                 </div>
                                 <span className="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible"
@@ -81,7 +83,7 @@ export default function HeroSection() {
                             <div className="tooltip">
                                 <div className="tooltip-toggle avatar">
                                     <div className="w-12">
-                                        <img src="https://i.pravatar.cc/100?img=2" alt="User" />
+                                        <Image src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png" alt="User" width={48} height={48} unoptimized />
                                     </div>
                                 </div>
                                 <span className="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible"
@@ -92,7 +94,7 @@ export default function HeroSection() {
                             <div className="tooltip">
                                 <div className="tooltip-toggle avatar">
                                     <div className="w-12">
-                                        <img src="https://i.pravatar.cc/100?img=3" alt="User" />
+                                        <Image src="https://cdn.flyonui.com/fy-assets/avatar/avatar-4.png" alt="User" width={48} height={48} unoptimized />
                                     </div>
                                 </div>
                                 <span className="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible"
